@@ -1,0 +1,11 @@
+command:
+  - "uvicorn"
+  - "main:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  - name: UC_RASTER_VOLUME_PATH
+    value: "/Volumes/classic_stable_2cn624/default/raster_tiles"

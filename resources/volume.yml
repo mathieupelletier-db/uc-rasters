@@ -1,0 +1,8 @@
+resources:
+  volumes:
+    raster_tiles_volume:
+      catalog_name: ${var.catalog}
+      schema_name: ${var.schema}
+      name: ${var.volume_name}
+      volume_type: MANAGED
+      comment: "Stores XYZ raster map tiles served by the uc-rasters Databricks App"

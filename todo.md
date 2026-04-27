@@ -1,0 +1,7 @@
+- [x] Create DAB Project
+- [x] Create UC Volume
+- [x] Download sample map raster tiles in a UC volume
+- [x] Create Databricks Apps
+- [x] Server rasters from this volume using this technique: https://github.com/databricks/databricks-sdk-py/blob/815b17ec7ebac42b8f914a21ec1d23fc6d74a8c7/databricks/sdk/mixins/files.py#L821
+- [x] Deploy to https://adb-7405612117836809.9.azuredatabricks.net/
+- [x] Show completed

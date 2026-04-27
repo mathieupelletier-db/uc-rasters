@@ -1,0 +1,13 @@
+resources:
+  apps:
+    uc_rasters_app:
+      name: uc-rasters-${bundle.target}
+      description: "Serves raster (XYZ) map tiles streamed from a Unity Catalog volume"
+      source_code_path: ../src/app
+      resources:
+        - name: raster-volume
+          description: "Read-only access to the raster tile volume"
+          uc_securable:
+            securable_full_name: ${var.catalog}.${var.schema}.${var.volume_name}
+            securable_type: VOLUME
+            permission: READ_VOLUME

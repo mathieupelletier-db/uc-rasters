@@ -1,0 +1,30 @@
+bundle:
+  name: uc-rasters
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: "Unity Catalog catalog name"
+    default: "classic_stable_2cn624"
+  schema:
+    description: "UC schema for the raster volume"
+    default: "default"
+  volume_name:
+    description: "Name of the UC managed volume that holds raster tiles"
+    default: "raster_tiles"
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      profile: adb-7405612117836809
+      host: https://adb-7405612117836809.9.azuredatabricks.net
+
+  prod:
+    mode: production
+    workspace:
+      profile: adb-7405612117836809
+      host: https://adb-7405612117836809.9.azuredatabricks.net
